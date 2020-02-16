@@ -3,19 +3,29 @@
 <head lang='en'>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width'>
-	<title>rollup-starter-app</title>
+  <title>Tampermonkey remote script loader tester</title>
+  <style>
+    span {
+      font-family: monospace;
+    }
 
-	<style>
-		body {
-			font-family: 'Helvetica Neue', Arial, sans-serif;
-			color: #333;
-			font-weight: 300;
-		}
-	</style>
+    body {
+      margin: auto;
+      max-width: 40em;
+    }
+  </style>
 </head>
 <body>
-	<h1>rollup-starter-app</h1>
-	<p>The time is <span id='time-now'>...</span></p>
+  <h1>Tampermonkey remote script loader tester</h1>
+  <p>
+    The actual Tampermonkey script loads the bundled script by <span>fetch</span>
+    and adds the script text content to the body of a new <span>script</span>
+    element that is then appended to the document.
+  </p>
+  <p>
+    This page loads the bundled script via the <span>src</span> attribute
+    of a pre-existing <span>script</span> element.
+  </p>
 	<script src='bundle.js'></script>
 </body>
 </html>
