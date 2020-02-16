@@ -5,12 +5,12 @@ export function createUi() {
   containerEl.style.top = "0";
   containerEl.style.left = "0";
   containerEl.style.zIndex = "99999999";
-  containerEl.style.padding = "1em";
+  containerEl.style.padding = "0.2em";
   containerEl.style.backgroundColor = "grey";
   document.body.prepend(containerEl);
 
-  const headerEl = document.createElement("h4");
-  headerEl.innerText = "Some buttons";
+  const headerEl = document.createElement("pre");
+  headerEl.innerText = "Custom control panel";
   containerEl.appendChild(headerEl);
 
   function addButton(label: string, tooltip: string, callback: (event: Event) => void) {
@@ -21,6 +21,12 @@ export function createUi() {
     containerEl.appendChild(buttonEl);
   }
   
+  addButton(
+    "Hello",
+    "Say hello.",
+    () => alert("Hello! 👋")
+  );
+
   addButton(
     "❌",
     "Close this box. Refresh the page to get it back.",
