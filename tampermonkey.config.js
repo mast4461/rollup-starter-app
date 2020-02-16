@@ -2,8 +2,8 @@ import packageJson from "./package.json";
 
 // The URL at which the tampermonkey script fetches your desired scripts
 export const bundleUrls = [
-  "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js", // Remote third party scripts
-  "https://raw.githubusercontent.com/user/my-repo/master/public/bundle.js?raw=true", // Your own
+  "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js", // Remote third party script(s)
+  "https://raw.githubusercontent.com/mast4461/tampermonkey-remote-script-loader/master/public/bundle.js", // Your own script(s)
 ];
 
 // Get the details for your own tampermonkey script header by creating a new script
