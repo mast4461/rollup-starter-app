@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      (See remote script)
 // @description  Use tampermonkey to load scripts from remote sources.
-// @match        INSERT YOUR MATCH STRING HERE
+// @match        https://tankionline.com/play/
 // @grant        none
 // ==/UserScript==
 
@@ -14,8 +14,7 @@
 
   // The URL at which the tampermonkey script fetches your desired scripts
   const scriptUrls = [
-    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js", // Remote third party script(s)
-    "https://raw.githubusercontent.com/mast4461/tampermonkey-remote-script-loader/master/public/bundle.js", // Your own script(s)
+    "https://raw.githubusercontent.com/poprygo/userscripts/main/src/userscript.js", // Your own script(s)
   ];
 
   // The body of the Tampermonkey script. Fetches scripts from URLs and adds them to the document in script tags.
